@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #efefef;
+}
+
 .App {
   height: 100vh;
+}
+
+.App__footer {
+  height: 94vh;
 }

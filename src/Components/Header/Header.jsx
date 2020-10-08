@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderStyle from './Header.module.css';
+import { NavLink } from "react-router-dom";
 
 export const Header = (props) => {
     return (<div id="app">
@@ -8,16 +9,16 @@ export const Header = (props) => {
                 <img alt="" src={props.logo} className={HeaderStyle.app__header__logo__img}/>
             </div>
             <div className={HeaderStyle.app__header__home}>
-                Home
+                <NavLink to='/Home' activeClassName={HeaderStyle.color}>Home</NavLink>
             </div>
             <div className={HeaderStyle.app__header__todo}>
-                ToDo
+                <NavLink to='/ToDo' activeClassName={HeaderStyle.color}>ToDo</NavLink>
             </div>
             <div className={HeaderStyle.app__header__settings}>
-                Settings
+                <NavLink to='/Settings' activeClassName={HeaderStyle.color}>Settings</NavLink>
             </div>
             <div className={HeaderStyle.app__header__about}>
-                About
+                <NavLink to='/About' activeClassName={HeaderStyle.color}>About</NavLink>
             </div>
         </div>
     </div>);

@@ -15,6 +15,10 @@
     height: 40px;
 }
 
+.color {
+    color: #fcf8f8;
+}
+
 .app__header__home {
     width: 100px;
     height: 23px;
